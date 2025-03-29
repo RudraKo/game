@@ -1,20 +1,23 @@
+/* === Kick Buttowski Logo Styling === */
+#logo {
+    width: 180px;  /* Bigger & cleaner */
+    height: auto;
+    display: block;
+    margin: 0 auto;  /* Centered */
+}
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
  :root{
-     --bgColor: #333;
-     --textPrimary: #fff;
-     --textSecondary: #666;
-     --primaryColor: #fd4;
+     --bgColor: #fff;
+     --textPrimary: #000000;
+     --textSecondary: #060505;
+     --primaryColor: #E00000;
  }
- body{
-     font-family: 'Roboto', sans-serif;
-     background-color:var(--bgColor);
-     color: var(--textPrimary);
-     font-size: 1.4rem;
- }
- main{
-     width: 600px;
-     margin: 50px auto;
- }
+ 
+ main {
+    width: 600px;
+    margin: 50px auto;
+    margin-left: 35%;  /* 🔥 Pushes content to the right */
+}
  h1{
      color: var(--primaryColor);
  }
@@ -50,12 +53,15 @@
  div#game:focus{
      outline:0;
  }
- #words{
-     filter: blur(5px);
-     color: var(--textSecondary);
+ #words {
+    filter: blur(5px);
+    color: var(--textSecondary);
+    width: 100%;  
+    max-width: 1000px; 
  }
  #game:focus #words{
      filter: blur(0);
+
  }
  #focus-error {
      position: absolute;
@@ -72,10 +78,10 @@
      margin: 0 5px;
  }
  .letter.correct{
-     color: #fff;
+     color: #ffd904;
  }
  .letter.incorrect{
-     color: #f55;
+     color:  #FF0000;
  }
  @keyframes blink{
      0%{
@@ -111,3 +117,15 @@
  #game.over #focus-error {
      display: none;
  }
+ body {
+    font-family: Garamond, serif;
+    background-color: var(--bgColor);
+    color: var(--textPrimary);
+    font-size: 1.4rem;
+
+
+    background-image: url('./wheel-print-design_24908-32405.avif');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: left top;
+    background-attachment: fixed;}
